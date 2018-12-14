@@ -1,0 +1,107 @@
+[
+	{ "question" : "After won the 13th gold medal in Rio Olympic 2016 by Michael Phelps, he has broken 12 individual gold medals records of -",
+	  "answers"   : [
+	  	{ "id" : 0, "text" : "Duke Kahanamoku"},
+	  	{ "id" : 0, "text" : "Leonidas of Rhodes"},
+	  	{ "id" : 0, "text" : "Larisa Latynina"},	
+	  	{ "id" : 0, "text" : "Paavo Nurmi"}
+	  			   ],
+	  "correct" : 2		   	
+	},
+		{
+		"question" : "Which Player won 2016 FIFA best player of the year Award?",
+		"answers"  : [
+			{"id"  : 0, "image" : "images/close_up_01.jpg" },
+			{"id"  : 1, "image" : "images/close_up_02.jpg" },
+			{"id"  : 2, "image" : "images/close_up_03.jpg" },
+			{"id"  : 3, "image" : "images/close_up_04.jpg" }
+		],
+		"correct"  : 3
+	},
+	{
+		"question" : "When an offensive player is ahead of the ball before it is snapped is a...",
+		"answers"  : [
+			{"id"  : 0, "text" : "Safety"},
+			{"id"  : 1, "text" : "Neutral zone"},
+			{"id"  : 2, "text" : "Offside"},
+			{"id"  : 3, "text" : "Handoff"}
+		],
+		"correct"  : 2
+	},
+	{
+		"question" : "Action or offensive linemen and backs in which they use their bodies to ward off defensive players is a...",
+		"answers"  : [
+			{"id"  : 0, "text" : "Backs"},
+			{"id"  : 1, "text" : "Handoff"},
+			{"id"  : 2, "text" : "Block"},
+			{"id"  : 3, "text" : "Safety"},
+			{"id"  : 4, "text" : "Line of scrimage"},
+			{"id"  : 5, "text" : "Triton"}
+		],
+		"correct"  : 3,
+		"feedback" : "Though the ertical plane,passing through the end of the balls nearer a team's goal was suggesting different answer would be safe."
+	},
+	{
+		"question" : "An imaginary line,or vertical plane,passing through the end of the balls nearer a team's goal line and parallel to the goal lines is a...",
+		"answers"  : [
+			{"id"  : 0, "text" : "Line of scrimmage"},
+			{"id"  : 1, "text" : "Offside"}
+		],
+		"correct"  : 0,
+		"feedback" : "Though the action or offensive linemen and backs in which they use their bodies to ward off defensive players it's Line of scrimage which will block the action."
+	},
+	{
+		"question" : "Action or offensive linemen and backs in which they use their bodies to ward off defensive players is a...",
+		"answers"  : [
+			{"id"  : 0, "text" : "Backs"},
+			{"id"  : 1, "text" : "Handoff"},
+			{"id"  : 2, "text" : "Block"},
+			{"id"  : 3, "text" : "Safety"},
+			{"id"  : 4, "text" : "Line of scrimage"},
+			{"id"  : 5, "text" : "Triton"}
+		],
+		"correct"  : 3,
+		"feedback" : "imaginary line,or vertical plane,passing through the end of the balls nearer a team's goal line and parallel to the goal lines is a safety line."
+	},
+	{
+		"question" : "An offensive play in which one back hands off the ball to another back who attempts to advance the ball is a...",
+		"answers"  : [
+			{"id"  : 0, "text" : "Backs"},
+			{"id"  : 1, "text" : "Handoff"},
+			{"id"  : 2, "text" : "Block"},
+			{"id"  : 3, "text" : "Handoff"},
+			{"id"  : 4, "text" : "Line of scrimage"},
+			{"id"  : 5, "text" : "Forward pass"}
+		],
+		"correct"  : 4,
+		"feedback" : "Players on the team who are stationed behind the linemen and who ordinarily carry or pass line of scrimage."
+	},
+	{
+		"question" : "Players on the team who are stationed behind the linemen and who ordinarily carry or pass the football is a...",
+		"answers"  : [
+			{"id"  : 0, "text" : "Backs"},
+			{"id"  : 1, "text" : "Handoff"},
+			{"id"  : 2, "text" : "Block"},
+			{"id"  : 3, "text" : "Safety"},
+			{"id"  : 4, "text" : "Line of scrimage"},
+			{"id"  : 5, "text" : "Triton"}
+		],
+		"correct"  : 1,
+		"feedback" : "Offensive manuever in which the back starts wide and then cuts back toward center for the backs."
+	},
+	{
+		"question" : "An offensive manuever in which the back starts wide and then cuts back toward center of the line is a...",
+		"answers"  : [
+			{"id"  : 0, "text" : "Offside"},
+			{"id"  : 1, "text" : "Handoff"},
+			{"id"  : 2, "text" : "Cut-back"},
+			{"id"  : 3, "text" : "Clipping"},
+			{"id"  : 4, "text" : "Lateral pass"},
+			{"id"  : 5, "text" : "Triton"}
+		],
+		"correct"  : 3,
+		"feedback" : "the team who are stationed behind the linemen and who ordinarily carry or pass the football to Cut-back ."
+	}
+
+	  ] 	
+

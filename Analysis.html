@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analysis</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="homeycombs.css" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:300'>
+<link rel="stylesheet" href="http://www.jqueryscript.net/css/jquerysctipttop.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/8181631509.js"></script>
+<script src="analysis.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+ <style> 
+ footer{
+    background-color: black;
+    color: white;
+
+  } 
+  
+  h4{
+    color: blue;
+  }
+  
+  
+  body{
+    background-color: rgba(85, 85, 85, 0.23)  ;
+  }
+  footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+    
+
+
+    .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: red;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+  .affix {
+      top: 0;
+      width: 100%;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      background-color: #F44336;
+      border-color: #F44336;
+      z-index: 1000;
+
+  }
+  .affix a {
+      color: #fff !important;
+      padding: 15px !important;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+  }
+  .affix-top a {
+      padding: 25px !important;
+  }
+  .affix + .container-fluid {
+      padding-top: 95px;
+  }
+  nav{
+    z-index: 1000;
+  }
+  </style>
+</head>
+<body>
+
+
+
+<img src="https://static1.squarespace.com/static/5472cb88e4b00abac9723402/t/54740a3de4b03905fd235909/1416890941836/T19_Sky_Sports_Banner.jpg?format=2500w" style="width:100%;">
+  
+
+
+
+
+<nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+        <span class="icon-bar"></span>
+        
+      </button>
+     <a  href="#"><img src="images/WhatsApp Image 2017-04-04 at 3.10.34 PM.jpeg" alt="SportsBase" style="height: 68px;"></a> 
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li ><a href="main_Shubham_Patel">Home</a></li>
+      <li>
+                    <a href="teams.html" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Soccer</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="manutd.html">Manchester United</a></li>
+                                <li><a href="real.html">Real madrid</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NBA</a>
+                            <ul class="dropdown-menu">
+                                <li><a>Boston Celtics </a></li>
+                                <li><a>New York Knicks</a></li>
+                                </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NFL</a>
+                            <ul class="dropdown-menu">
+                                <li><a>New England Patriots</a></li>
+                                <li><a>Oakland Raiders</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="Leagues_Shubham.html">Leagues</a></li>
+                
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       <li >
+                            <a href="sportsbasequiz.html" >SportsBase Quiz</a>
+                           
+                        </li>
+                        
+                        <li class="divider"></li>
+                       <li>
+                            <a href="sportsbaseblog.html" > SportsBase Blog</a>
+                            
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="shop.html" > Shop</a>
+                            
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="news.html">News</a></li>
+                 <li ><a href="Analysis.html">Analysis</a>
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="cartpage.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+  
+
+<img src="http://pediaa.com/wp-content/uploads/2016/03/Difference-Between-Analysis-and-Analyses-image-1.jpg" style="height:600px;width: 100%"/>
+
+
+
+
+   
+   
+
+
+    
+    <div class="container">
+  <h2>Leagues Standings</h2>
+  <p>The top 4 teams shown with different colors are the teams that qualify for the eurpean football each year!</p>
+
+  <table class="table" style="width:100%; color: black; background-color:gray">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Teams</th>
+        <th>GP</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Chelsea</td>
+        <td>32</td>
+        <td>24</td>
+        <td>3</td>
+        <td>5</td>
+        <td>75</td>
+      </tr>      
+      <tr class="success">
+       <td>2</td>
+        <td>Torttenham</td>
+        <td>32</td>
+        <td>21</td>
+        <td>8</td>
+        <td>3</td>
+        <td>71</td>
+      </tr>
+      <tr class="danger">
+       <td>3</td>
+        <td>Liverpool</td>
+        <td>33</td>
+        <td>19</td>
+        <td>9</td>
+        <td>5</td>
+        <td>66</td>
+      </tr>
+      <tr class="info">
+        <td>4</td>
+        <td>Manchester City</td>
+        <td>32</td>
+        <td>19</td>
+        <td>7</td>
+        <td>6</td>
+        <td>66</td>
+      </tr>
+      <tr class="active">
+      <td>5</td>
+        <td>Manchester United</td>
+        <td>31</td>
+        <td>16</td>
+        <td>12</td>
+        <td>3</td>
+        <td>60</td>
+      </tr>
+      <tr>
+      <td>6</td>
+        <td>Arsenal</td>
+        <td>31</td>
+        <td>17</td>
+        <td>6</td>
+        <td>8</td>
+        <td>57</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<br/>
+<div class="container">    
+ 
+      
+          
+        <div class="panel-body"><img src="http://cdn.bleacherreport.net/images_root/article/media_slots/photos/000/932/582/iniesta-skill-psg_original.gif?1372085436" class="img-responsive" style="width:100%" alt="Image"></div>
+        
+      </div>
+    </div>
+      
+
+
+        <div id="container" style="width:95%; height: 400px; margin-left:40px; ">
+
+       <h1 style="text-align: center;padding-top:100px"> Graphs On The Basis Of: </h1>
+          
+         </div>
+         
+        
+
+      <div class="row">
+        <div class="col-sm-4" style="text-align: center;">
+        
+        <button type="button" onclick="goalChart()" class="btn btn-info"> Goals Scored</button>
+        </div>
+        <div class="col-sm-4" style="text-align: center;">
+          <button type="button" onclick="pointEarned()" class="btn btn-info">Points in the Table</button>
+        </div>
+        <div class="col-sm-4" style="text-align: center;">
+          <button type="button" onclick="totlawining()" class="btn btn-info">Games Won</button>
+        </div>
+        
+      </div>
+
+      
+<div class="well" style="width: 100%">
+The Premier League is an English professional league for men's association football clubs. At the top of the English football league system, it is the country's primary football competition. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League (EFL; known as "The Football League" before 2016–17). Welsh clubs that compete in the English football league system can also qualify.
+The Premier League is a corporation in which the 20 member clubs act as shareholders. Seasons run from August to May. Teams play 38 matches each (playing each team in the league twice, home and away), totalling 380 matches in the season.[1] Most games are played on Saturday and Sunday afternoons; others during weekday evenings. It is colloquially known as the Premiership and outside the UK it is commonly referred to as the English Premier League (EPL).
+The competition formed as the FA Premier League on 20 February 1992 following the decision of clubs in the Football League First Division to break away from the Football League, which was founded in 1888, and take advantage of a lucrative television rights deal.[2] The deal was worth £1 billion a year domestically as of 2013–14, with BSkyB and BT Group securing the domestic rights to broadcast 116 and 38 games respectively.[3] The league generates €2.2 billion per year in domestic and international television rights.[4] In 2014/15, teams were apportioned revenues of £1.6 billion.
+</div>
+
+</div>
+
+  <footer style="background-color: black;">
+
+  <div class="container">
+    <section>
+      <div class="page-header" id="contact">
+          <h2>Contact Us.<small> Contact us for more.</small></h2>
+        </div><!-- End Page Header -->
+
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Send us a message, or contact us from the address below</p>
+
+
+            <address>
+              <strong>SportsBase.com</strong></br>
+              27, EverShine colony </br>
+              Near Sanjana Park</br>
+              Indore - 452001</br>
+              P: +1 8577015814
+            </address>
+          </div>
+          
+          <div class="col-lg-8">
+            <form action="" class="form-horizontal">
+              <div class="form-group">
+                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-name" placeholder="Enter you name">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="Enter you Email Address">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-url" class="col-lg-2 control-label">Your Website</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="If you have Any.">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Any Message</label>
+                <div class="col-lg-10">
+                  <textarea name="user-message" id="user-message" class="form-control" 
+                  cols="20" rows="10" placeholder="Enter your Message"></textarea>
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+
+             
+
+            </form>
+          </div>
+        </div><!-- End the row -->
+
+    </section>
+  </div>
+
+
+
+  
+    
+        <div class=" text-center">
+        
+
+       
+        <ul class="list-inline">
+          <li><a href="http://www.twitter.com/wiredwiki">Twitter</a></li>
+          <li><a href="http://www.facebook.com/askorama">Facebook</a></li>
+          <li><a href="http://www.youtube.com/wiredwiki">YouTube</a></li>
+        </ul>
+
+        <p>&copy; Copyright @ 2017</p>
+
+      </div>
+      
+
+    </footer>
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+</body>
+</html>

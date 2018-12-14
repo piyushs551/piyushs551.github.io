@@ -1,0 +1,410 @@
+ <!DOCTYPE html>
+<html ng-app='myApp' >
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="teams.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="teams.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="app.js"></script>
+		<script src="controller.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+
+  <style>   
+  
+  .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: red;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+  .affix {
+      top: 0;
+      width: 100%;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      background-color: #F44336 ;
+      border-color: #F44336 ;
+
+
+ }
+  .affix a {
+      color: #fff !important;
+      padding: 15px !important;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+  }
+  .affix-top a {
+      padding: 25px !important;
+  }
+  .affix + .container-fluid {
+      padding-top: 95px;
+  }
+  nav{
+    z-index: 1000;
+  }
+    
+
+.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev    { left: -25%; }
+.carousel-control        { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+
+footer {
+      background-color: #555;
+      color: white;
+      
+   }
+
+
+  
+	.col-md-2{
+	text-align:center;
+	text-decoration:none;
+	margin: 7px 0px 7px 33px;}
+  </style>
+
+  <script>
+$( document ).ready(function() {
+  $('#myCarousel').carousel({
+  interval: false
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  for (var i=0;i<3;i++) {
+    next=next.next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+});
+
+</script>
+</head>
+<body>
+
+<img src="https://static1.squarespace.com/static/5472cb88e4b00abac9723402/t/54740a3de4b03905fd235909/1416890941836/T19_Sky_Sports_Banner.jpg?format=2500w" style="width:100%;">
+  
+<nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+        <span class="icon-bar"></span>
+        
+      </button>
+     <a  href="#"><img src="images/logo.jpg" alt="SportsBase" style="height: 68px;"></a> 
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li ><a href="#">Home</a></li>
+      <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Soccer</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="manutd.html">Manchester United</a></li>
+                                <li><a href="real.html">Real madrid</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NBA</a>
+                            <ul class="dropdown-menu">
+                                <li><a>Boston Celtics </a></li>
+                                <li><a>New York Knicks</a></li>
+                                </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NFL</a>
+                            <ul class="dropdown-menu">
+                                <li><a>New England Patriots</a></li>
+                                <li><a>Oakland Raiders</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="#">Leagues</a></li>
+                
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       
+                        <li >
+                            <a href="#" >SportsBase Quiz</a>
+                           
+                        </li>
+                        
+                        <li class="divider"></li>
+                       <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> SportsBase Blog</a>
+                            
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Shop</a>
+                            
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="#">News</a></li>
+                 <li ><a href="#">Analysis</a>
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<div class="row-offcanvas row-offcanvas-left">
+  <div id="sidebar" class="sidebar-offcanvas">
+      <div class="col-md-12">
+        <h3 style="margin-top:10px">Players & Staff</h3>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="manutd.html">First Team</a></li>
+          <li><a href="reserves.html">Under-18s</a></li>
+          <li><a href="manager.html">The Manager</a></li>
+          
+        </ul>
+      </div>
+  </div>
+  <div id="main" >
+      <div class="col-md-12 col-sm-12">
+      <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+          </p>
+          <h2>First Team</h2>
+         <!-- <div class="row">-->
+           
+    <div class="carousel slide" id="myCarousel">
+  <div class="carousel-inner" id="inner" >
+     
+
+      <div class="item active">
+      <div class="col-md-2 col-sm-2" onmouseover="bigImg(this)" onmouseout="normalImg(this)" >
+         <img  id="images" class="img-responsive" src="images/ddg.jpg">
+         
+        <span><a href="#/details/0"><br>1<br>David De Gea<br>Goalkeeper</a></span>
+		
+      </div>
+      </div>
+
+      <div class="item ">
+      <div class="col-md-2 col-sm-2" onmouseover="bigImg(this)" onmouseout="normalImg(this)" >
+         <img border="0" id="images" class="img-responsive" src="images/baily.jpg">
+         
+        <span><a href="#/details/1"><br>3<br>Eric Baily<br>Defender</a></span>
+      </div>
+      </div>
+
+      <div class="item ">
+      <div class="col-md-2 col-sm-2" onmouseover="bigImg(this)" onmouseout="normalImg(this)" >
+         <img border="0" id="images" class="img-responsive" src="images/jones.jpg">
+         
+        <span><a href="#/details/2"><br>4<br>Phil Jones<br>Defender</a></span>
+      </div>
+      </div>
+
+      <div class="item ">
+      <div class="col-md-2 col-sm-2" onmouseover="bigImg(this)" onmouseout="normalImg(this)" >
+         <img border="0" id="images" class="img-responsive" src="images/rojo.jpg">
+         
+        <span><a href="#/details/3"><br>5<br>Marcos Rojo<br>Defender</a></span>
+      </div>
+      </div>
+
+      <div class="item ">
+      <div class="col-md-2 col-sm-2" onmouseover="bigImg(this)" onmouseout="normalImg(this)" >
+         <img border="0" id="images" class="img-responsive" src="images/pogba.jpg">
+         
+        <span><a href="#/details/4"><br>6<br>Paul Pogba<br>Midfielder</a></span>
+      </div>
+      </div>
+
+      <div class="item ">
+      <div class="col-md-2 col-sm-2" onmouseover="bigImg(this)" onmouseout="normalImg(this)" >
+         <img id="images" class="img-responsive" src="images/mata.jpg">
+         
+        <span><a href="#/details/5"><br>8<br>Juan Mata<br>Midfielder</a></span>
+      </div>
+      </div>
+	  
+	  <div class="item ">
+      <div class="col-md-2 col-sm-2" onmouseover="bigImg(this)" onmouseout="normalImg(this)" >
+         <img id="images" class="img-responsive" src="images/zlatan.jpg">
+         
+        <span><a href="#/details/6"><br>9<br>Zlatan Ibrahimovic<br>Forward</a></span>
+      </div>
+      </div>
+    
+       </div>
+	  
+
+     <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+    	     
+   
+	</div>
+<div ng-view style="background-color:#cab9b933"></div>
+      </div>
+  </div>
+</div>
+<footer style="background-color: black;">
+  <div class="container">
+    <section>
+      <div class="page-header" id="contact">
+          <h2>Contact Us.<small> Contact us for more.</small></h2>
+        </div><!-- End Page Header -->
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Send us a message, or contact us from the address below</p>
+            <address>
+              <strong>SportsBase.com</strong></br>
+              27, EverShine colony </br>
+              Near Sanjana Park</br>
+              Indore - 452001</br>
+              P: +1 8577015814
+            </address>
+          </div>
+          
+          <div class="col-lg-8">
+            <form action="" class="form-horizontal">
+              <div class="form-group">
+                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-name" placeholder="Enter you name">
+                </div>
+              </div><!-- End form group -->
+              <div class="form-group">
+                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="Enter you Email Address">
+                </div>
+              </div><!-- End form group -->
+              <div class="form-group">
+                <label for="user-url" class="col-lg-2 control-label">Your Website</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="If you have Any.">
+                </div>
+              </div><!-- End form group -->
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Any Message</label>
+                <div class="col-lg-10">
+                  <textarea name="user-message" id="user-message" class="form-control" 
+                  cols="20" rows="10" placeholder="Enter your Message"></textarea>
+                </div>
+              </div><!-- End form group -->
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+             
+            </form>
+          </div>
+        </div><!-- End the row -->
+    </section>
+  </div>
+  
+    
+        <div class=" text-center">
+        
+       
+        <ul class="list-inline">
+          <li><a href="http://www.twitter.com/wiredwiki">Twitter</a></li>
+          <li><a href="http://www.facebook.com/askorama">Facebook</a></li>
+          <li><a href="http://www.youtube.com/wiredwiki">YouTube</a></li>
+        </ul>
+        <p>&copy; Copyright @ 2017</p>
+      </div>
+      
+    </footer>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SportsBase</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/homeycombs.css" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:300'>
+<link rel="stylesheet" href="http://www.jqueryscript.net/css/jquerysctipttop.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/8181631509.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+ <style> 
+
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  } 
+  
+  h4{
+    color: blue;
+  }
+  
+  body{
+    background-color: rgba(85, 85, 85, 0.23)  ;
+  }
+  .a1{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: silver;
+
+  }
+  footer {
+      background-color: #555;
+      color: white;
+      
+    }
+
+    iframe{
+     width:100%
+}
+     .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: red;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+  .affix {
+      top: 0;
+      width: 100%;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      background-color: #F44336;
+      border-color: #F44336;
+
+
+  }
+  .affix a {
+      color: #fff !important;
+      padding: 15px !important;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+  }
+  .affix-top a {
+      padding: 25px !important;
+  }
+  .affix + .container-fluid {
+      padding-top: 95px;
+  }
+  nav{
+    z-index: 1000;
+  }
+
+  img {
+  
+}
+.imgA2 {
+  z-index: 1;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.imgB1 {
+  z-index: 3;
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+  </style>
+</head>
+<body>
+
+
+<img src="https://static1.squarespace.com/static/5472cb88e4b00abac9723402/t/54740a3de4b03905fd235909/1416890941836/T19_Sky_Sports_Banner.jpg?format=2500w"  class="resposive;"style="width:100%;">
+  
+
+
+
+
+<nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+        <span class="icon-bar"></span>
+        
+      </button>
+     <a  href="#"><img src="images/WhatsApp Image 2017-04-04 at 3.10.34 PM.jpeg" alt="SportsBase" style="height: 68px;"></a> 
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li ><a href="main_Shubham_Patel.html">Home</a></li>
+      <li>
+                    <a href="teams.html" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Soccer</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="manutd.html">Manchester United</a></li>
+                                <li><a href="real.html">Real madrid</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NBA</a>
+                            <ul class="dropdown-menu">
+                                <li><a>Boston Celtics </a></li>
+                                <li><a>New York Knicks</a></li>
+                                </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NFL</a>
+                            <ul class="dropdown-menu">
+                                <li><a>New England Patriots</a></li>
+                                <li><a>Oakland Raiders</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="Leagues_Shubham.html">Leagues</a></li>
+                
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       <li >
+                            <a href="sportsbasequiz.html" >SportsBase Quiz</a>
+                           
+                        </li>
+                        
+                        <li class="divider"></li>
+                       <li>
+                            <a href="sportsbaseblog.html" > SportsBase Blog</a>
+                            
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="shop.html" > Shop</a>
+                            
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="news.html">News</a></li>
+                 <li ><a href="Analysis.html">Analysis</a>
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="cartpage.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item ">
+        <figure class="posts__thumb">
+          <img src="images/hero-slide1.jpg" class="imgA1" data-gradient-map="#282840, #f92552">
+        </figure>
+        <div class="posts__img-player">
+          <img src="images/hero-unit-player.png" class="imgA2" alt="Hero Unit Image">
+        </div>
+        
+      </div>
+
+      <div class="item active">
+        <img src="http://insider.ticketmaster.com/wp-content/uploads/2014/06/soccer-play-ball.png" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="http://www.owlsports.com/images/2017/3/9/BS2_4846_Obi_web.jpg" alt="Flower" width="460" height="345">
+        <
+      </div>
+
+      <div class="item">
+        <img src="http://abcnews.go.com/images/Sports/WireAP_bb8f2d64b9d849e5ae06d0003b29cd64.jpg" alt="Flower" width="460" height="345">
+        
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <br/>
+ 
+<div class="container">
+   <marquee behavior="alternate" style="font-size:28px; font-style:italic;">News:- Indiana won’t accept any player with history of sexual or domestic violence</marquee>
+</div>
+
+
+<section>
+        <div class="page-header" >
+          <h2 style="margin-left:50px;"><b>HIGHLIGHTS</b></h2>
+        </div>
+      
+      <div class="col-sm-4">
+          
+              <iframe width="300" height="300" src="https://www.youtube.com/embed/SEzS5R4hU_I" frameborder="0" allowfullscreen></iframe>
+
+              
+            <footer><b>Golden State Warriors vs Toronto Raptors-Game Highlights</b></footer>
+        </div>
+      
+      <div class="col-sm-4">
+      <iframe width="300" height="300" src="https://www.youtube.com/embed/_eq_epAo0Zg" frameborder="0" allowfullscreen></iframe>
+
+      <footer><b>Swansea Vs Manchester United 1-3-All Goals & Match Highlights</b></footer>
+      </div>
+        
+      <div class="col-sm-4">
+      <iframe width="300" height="300" src="https://www.youtube.com/embed/26evHeC3BAQ" frameborder="0" allowfullscreen></iframe>
+      <footer><b>Jordan Spieth's Golf Shot Highlights 2017 SBS Tournament</b></footer><br/><br/>
+        </div>
+      </section><br/><br/><br/><br/>
+
+
+
+<div class="well">
+      <section>
+        <div class="page-header" id="Events">
+          <h2 style="margin-left:50px;"><b>TOP HEADLINES</b></h2>
+        </div>
+      
+      <div class="col-md-6">
+            <blockquote>
+              <p> It was the first overtime Super Bowl in history. And not surprisingly, the MVP went to Patriots quarterback Tom Brady, but he did have a lot of help.
+            It was one of the most dramatic championship games ever.
+            The New England Patriots overcame a 25-point deficit to beat the Atlanta Falcons 34-28 in overtime.
+            And let's talk about this with NPR's Tom Goldman, who was at the game in Houston. Good morning, Tom.
+            I don't care if you're a sports fan or not, if you missed last night's Super Bowl, I am really sorry.  
+            </p>
+              </blockquote>
+            
+          </div>
+        
+
+
+          <div class="col-6">
+          
+              <img src="https://www.wired.com/wp-content/uploads/2015/02/superbowl-broadcast-ft.jpg" alt="SportsBase" style="width:500px; height:250px;"/>
+          
+          </div>
+        
+      </section>
+      </div>
+      
+  
+      <div class="row well well-lg" style="margin-left: 15px;">
+        <div class="col-md-6 col-md-push-6">
+          <div class="embed-responsive embed-responsive-16by9"> 
+          <h1 style="color: black"> Register to play Fantasy League </h1>  
+            <img class="img-responsive" style="margin-top: 40px; width:550px " src="images/join.jpg">
+            <button style="margin-left: 20px" type="button" class="btn btn-success">SIGN UP NOW &nbsp;&nbsp; <i class="fa fa-arrow-right"></i></button>
+          </div>          
+        </div>
+        
+        <div class="col-md-6 col-md-pull-6">
+          <img class="img-responsive" style="width: 510px" src="images/pick.jpg"><br><br>
+          <p>If you have any questions, Mail us at <a href="#"> fantasyleague@sportsbase.com </a></p>
+        </div>
+      </div>
+    </div>
+
+
+  
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="js/jquery.homeycombs.js"></script> 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.honeycombs').honeycombs();
+    });
+</script>
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+
+<footer style="background-color: black;">
+
+  <div class="container">
+    <section>
+      <div class="page-header" id="contact">
+          <h2>Contact Us.<small> Contact us for more.</small></h2>
+        </div><!-- End Page Header -->
+
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Send us a message, or contact us from the address below</p>
+
+
+            <address>
+              <strong>SportsBase.com</strong></br>
+              27, EverShine colony </br>
+              Near Sanjana Park</br>
+              Indore - 452001</br>
+              P: +1 8577015814
+            </address>
+          </div>
+          
+          <div class="col-lg-8">
+            <form action="" class="form-horizontal">
+              <div class="form-group">
+                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-name" placeholder="Enter you name">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="Enter you Email Address">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-url" class="col-lg-2 control-label">Your Website</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="If you have Any.">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Any Message</label>
+                <div class="col-lg-10">
+                  <textarea name="user-message" id="user-message" class="form-control" 
+                  cols="20" rows="10" placeholder="Enter your Message"></textarea>
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+
+             
+
+            </form>
+          </div>
+        </div><!-- End the row -->
+
+    </section>
+  </div>
+
+
+
+  
+    
+        <div class=" text-center">
+        
+
+       
+        <ul class="list-inline">
+          <li><a href="http://www.twitter.com/wiredwiki">Twitter</a></li>
+          <li><a href="http://www.facebook.com/askorama">Facebook</a></li>
+          <li><a href="http://www.youtube.com/wiredwiki">YouTube</a></li>
+        </ul>
+
+        <p>&copy; Copyright @ 2017</p>
+
+      </div>
+      
+
+    </footer>
+
+</body>
+</html>

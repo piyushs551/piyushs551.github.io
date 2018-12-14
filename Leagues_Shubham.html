@@ -1,0 +1,943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leagues</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="homeycombs.css" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:300'>
+<link rel="stylesheet" href="http://www.jqueryscript.net/css/jquerysctipttop.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/8181631509.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+ <style>  
+  
+  h4{
+    color: blue;
+  }
+  
+  body{
+    background-color: rgba(85, 85, 85, 0.23)  ;
+  }
+  .a1{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: silver;
+
+  }
+  footer {
+      background-color: #555;
+      color: white;
+      
+    }
+     .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: red;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+  .affix {
+      top: 0;
+      width: 100%;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      background-color: #F44336;
+      border-color: #F44336;
+
+
+  }
+  .affix a {
+      color: #fff !important;
+      padding: 15px !important;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+  }
+  .affix-top a {
+      padding: 25px !important;
+  }
+  .affix + .container-fluid {
+      padding-top: 95px;
+  }
+  nav{
+    z-index: 1000;
+  }
+  </style>
+</head>
+<body>
+
+
+<img src="https://static1.squarespace.com/static/5472cb88e4b00abac9723402/t/54740a3de4b03905fd235909/1416890941836/T19_Sky_Sports_Banner.jpg?format=2500w" style="width:100%;">
+  
+
+
+
+
+<nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+        <span class="icon-bar"></span>
+        
+      </button>
+     <a  href="#"><img src="images/WhatsApp Image 2017-04-04 at 3.10.34 PM.jpeg" alt="SportsBase" style="height: 68px;"></a> 
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li ><a href="main_Shubham_Patel">Home</a></li>
+      <li>
+                    <a href="teams.html" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Soccer</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="manutd.html">Manchester United</a></li>
+                                <li><a href="real.html">Real madrid</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NBA</a>
+                            <ul class="dropdown-menu">
+                                <li><a>Boston Celtics </a></li>
+                                <li><a>New York Knicks</a></li>
+                                </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NFL</a>
+                            <ul class="dropdown-menu">
+                                <li><a>New England Patriots</a></li>
+                                <li><a>Oakland Raiders</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="Leagues_Shubham.html">Leagues</a></li>
+                
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       <li >
+                            <a href="sportsbasequiz.html" >SportsBase Quiz</a>
+                           
+                        </li>
+                        
+                        <li class="divider"></li>
+                       <li>
+                            <a href="sportsbaseblog.html" > SportsBase Blog</a>
+                            
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="shop.html" > Shop</a>
+                            
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="news.html">News</a></li>
+                 <li ><a href="Analysis.html">Analysis</a>
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="cartpage.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="honeycombs" style="width:100%;height: 600px;">
+<div class="comb" onclick="window.location.href='#c1'"> <img src="images/d7432a5c02cca4e0ead2d5887590295a.jpg" /> <span>Premier League</span> </div>
+<div class="comb" onclick="window.location.href='#c2'"> <img src="images/Champions-League1-200x200.jpg" /> <span><b>Championship</b></span> </div>
+<div class="comb" onclick="window.location.href='#c3'"> <img src="images/AAEAAQAAAAAAAAkEAAAAJGQwZDc1YTI1LWVmMDItNDgzOC05NDljLWU4YzAxMWRiODM0YQ.png" /> <span><b>National League</b></span> </div>
+<div class="comb" onclick="window.location.href='#c4'"> <img src="images/downloaded from www-imagehandler-net using ecp100.png" /> <span><b>FA Cup</b></span></div>
+<div class="comb" onclick="window.location.href='#c5'"> <img src="images/images (1).png" /> <span><b>Women Championship</b></span></div>
+<div class="comb" onclick="window.location.href='#c6'"> <img src="images/Premier_Soccer_League.png" /> <span><b>Primera Division</b></span></div>
+<div class="comb" onclick="window.location.href='#c7'"> <img src="images/images.png" /> <span><b>Bundesliga</b></span></div>
+
+<div class="comb" onclick="window.location.href='#c8'"> <img src="images/download.png" /> <span><b>International Champions Cup</b></span></div>
+
+<div class="comb" onclick="window.location.href='#c9'"> <img src="images/2011_FIFA_Club_World_Cup.svg.png" /><span><b>Fifa Club Worldcup</b></span> </div>
+<div class="comb" onclick="window.location.href='#c10'"> <img src="images/AFC-Asian-Cup-2015-Logo.jpg" /><span><b>Asian Cup</b></span> </div>
+<div class="comb" onclick="window.location.href='#c9'"> <img src="https://s-media-cache-ak0.pinimg.com/736x/ab/75/49/ab7549ba2b256c13ee135f745ba7f02b.jpg" /><span><b>Fifa Club Worldcup</b></span> </div>
+<div class="comb" onclick="window.location.href='#c10'"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/National_Premier_Soccer_League_logo_2016.jpg/200px-National_Premier_Soccer_League_logo_2016.jpg" /><span><b>Asian Cup</b></span> </div>
+
+<div class="comb" onclick="window.location.href='#c9'"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/09/K_League_Classic.png/200px-K_League_Classic.png" /><span><b>Fifa Club Worldcup</b></span> </div>
+<div class="comb" onclick="window.location.href='#c10'"> <img src="https://s-media-cache-ak0.pinimg.com/236x/43/0a/98/430a98a02dbd46b4d815a03ed157ecb8.jpg" /><span><b>Asian Cup</b></span> </div>
+</div>
+<div class="container">
+<h1>Information About Leagues:</h1>
+</div><br/>
+
+<div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/d7432a5c02cca4e0ead2d5887590295a.jpg" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c1">Premier League</h4>
+      <p>The Premier League is an English professional league for men's association football clubs. At the top of the English football league system, it is the country's primary football competition. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League <br/>(EFL; known as "The Football League" before 2016–17). Welsh clubs that compete in the English football league system can also qualify.</p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">Premier League</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="http://i1.mirror.co.uk/incoming/article9042247.ece/ALTERNATES/s615/Aguero-Zlatan-Ibrahimovic-Costa-Ozil-BANNER.jpg" style="height:400px;width:100%;">
+        <div class="well">
+         The Premier League is a corporation in which the 20 member clubs act as shareholders. Seasons run from August to May. Teams play 38 matches each (playing each team in the league twice, home and away), totalling 380 matches in the season.[1] Most games are played on Saturday and Sunday afternoons; others during weekday evenings. It is colloquially known as the Premiership and outside the UK it is commonly referred to as the English Premier League (EPL).<br/><br/>
+         </div>
+         <div class="well">
+         Despite significant European success in the 1970s and early 1980s, the late '80s marked a low point for English football. Stadiums were crumbling, supporters endured poor facilities, hooliganism was rife, and English clubs were banned from European competition for five years following the Heysel Stadium disaster in 1985. The Football League First Division, the top level of English football since 1888, was behind leagues such as Italy's Serie A and Spain's La Liga in attendances and revenues, and several top English players had moved abroad.
+         </div>
+      <div class="well">   
+By the turn of the 1990s the downward trend was starting to reverse: at the 1990 FIFA World Cup, England reached the semi-finals; UEFA, European football's governing body, lifted the five-year ban on English clubs playing in European competitions in 1990, resulting in Manchester United lifting the UEFA Cup Winners' Cup in 1991, and the Taylor Report on stadium safety standards, which proposed expensive upgrades to create all-seater stadiums in the aftermath of the Hillsborough disaster, was published in January of that year.
+</div>
+<div class="well">
+At the close of the 1991 season, a proposal was tabled for the establishment of a new league that would bring more money into the game overall. The Founder Members Agreement, signed on 17 July 1991 by the game's top-flight clubs, established the basic principles for setting up the FA Premier League. The newly formed top division would have commercial independence from The Football Association and the Football League, giving the FA Premier League licence to negotiate its own broadcast and sponsorship agreements. The argument given at the time was that the extra income would allow English clubs to compete with teams across Europe.
+</div>
+<div class="well">
+The managing director of London Weekend Television (LWT), Greg Dyke, met with the representatives of the "big five" football clubs in England in 1990. The meeting was to pave the way for a break away from The Football League. Dyke believed that it would be more lucrative for LWT if only the larger clubs in the country were featured on national television and wanted to establish whether the clubs would be interested in a larger share of television rights money. The five clubs decided it was a good idea and decided to press ahead with it; however, the league would have no credibility without the backing of The Football Association and so David Dein of Arsenal held talks to see whether the FA were receptive to the idea. The FA did not enjoy an amicable relationship with the Football League at the time and considered it as a way to weaken the Football League's position.
+</div>
+
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+    </div>
+
+  </div>
+
+  </div>
+
+<div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/Champions-League1-200x200.jpg"  class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c2">Championship</h4>
+      <p>The Football League Championship, which was introduced for the 2004–05 season, was previously known as the Football League First Division (1992–2004), and before that was known as Division Two (1892–1992). The winners of the Championship receive the Football League Championship trophy, the same trophy as the old First Division champions were handed prior to the Premier League's inception in 1992.</p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">Championship</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="https://www.thesun.co.uk/wp-content/uploads/2016/12/nintchdbpict000240037824.jpg?w=960&strip=all&quality=100" style="height:400px;width:100%;">
+        <div class="well">
+         In its inaugural season of 2004–05, the Football League Championship announced a total attendance (including postseason) of 9.8 million, which it said was the fourth highest total attendance for a European football division, behind the FA Premier League (12.88m), Spain's La Liga (11.57m) and Germany's Bundesliga (10.92m), but beating Italy's Serie A (9.77m) and France's Ligue 1 (8.17m).[4][5][6] The total figures were aided somewhat by the presence of 24 clubs, compared to 20 clubs in both Serie A and Ligue 1, and 18 in the Bundesliga. A major factor to the competition's success comes from television revenue.[citation needed]
+On 30 September 2009, Coca-Cola announced they would end their sponsorship deal with The Football League (now English Football League) at the end of the 2009–10 season.[7] On 16 March 2010, npower were announced as the new title sponsors of the Football League, and from the start of the 2010–11 Football League season until the end of the 2012–13 season, the Football League Championship was known as the Npower Championship.
+         </div>
+         <div class="well">
+        The league comprises 24 teams. Over the course of a season, which runs annually from August to the following May, each team plays twice against the others in the league, once at 'home' and once 'away', resulting in each team competing in 46 games in total. Three points are awarded for a win, one for a draw and zero for a loss. The teams are ranked in the league table by points gained, then goal difference, then goals scored and then their head-to-head record for that season. In the event that two or more teams finish the season equal in all these respects, teams are separated by alphabetical order, unless a promotion, relegation or play-off place (see below) is at stake, when the teams are separated by a play-off game, though this improbable situation has never arisen in all the years the rule has existed.[9]
+         </div>
+      <div class="well">   
+At the end of the season, the top two teams and the winner of the Championship play-offs are promoted to the Premier League and the bottom three teams are relegated to Football League One. The Football League Championship play-offs is a knock-out competition for the teams finishing the season in third to sixth place with the winner being promoted to the Premier League. In the play-offs, the third-placed team plays against the sixth-placed team and the fourth-placed team plays against the fifth-placed team in two-legged semi-finals (home and away). The winners of each semi-final then compete in a single match with the prize being promotion to the Premier League and the Championship play-off trophy.
+</div>
+<div class="well">
+In the 2015–16 season, Burnley were the division champions, Middlesbrough were the runners up, and Hull City were promoted via the play-offs. At present, Ipswich Town hold the longest tenure in the Championship, last being out of the division in the 2001–02 season when they were relegated from the Premier League.[3]
+</div>
+ </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+    </div>
+
+  </div>
+
+  </div>
+
+
+
+
+
+<div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/AAEAAQAAAAAAAAkEAAAAJGQwZDc1YTI1LWVmMDItNDgzOC05NDljLWU4YzAxMWRiODM0YQ.png"  class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c3">National League</h4>
+      <p>The National League of Professional Baseball Clubs, known simply as the National League (NL), is the older of two leagues constituting Major League Baseball (MLB) in the United States and Canada, and the world's oldest current professional team sports league. Founded on February 2, 1876, to replace the National Association of Professional Base Ball Players, it is sometimes called the Senior Circuit, in contrast to MLB's other league, the American League, which was founded 25 years later. Both leagues currently have 15 teams. The two league champions of 1903 arranged to compete against each other in the inaugural World Series. After the 1904 champions failed to reach a similar agreement, the two leagues formalized the World Series as an arrangement between the leagues. National League teams have won 48 of the 112 World Series contested from 1903 to 2016. The 2016 National League champions are the Chicago Cubs.</p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">National League</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="http://image.cleveland.com/home/cleve-media/width960/img/plain-dealer/photo/2016/10/29/-d50b22b824471c83.jpg" style="height:400px;width:100%;">
+        <div class="well">
+         By 1875, the National Association of Professional Base Ball Players was dangerously weak. The N.A. suffered from a lack of strong authority over clubs, unsupervised scheduling, unstable membership, dominance by one team (the Boston Red Stockings), and an extremely low entry fee ($10) that gave clubs no incentive to abide by league rules when it was not convenient.
+William Hulbert, a Chicago businessman and an officer of the Chicago White Stockings, approached several N.A. clubs with the plans for a league with stronger central authority and exclusive territories in larger cities only. Additionally, Hulbert had a problem—five of his star players were threatened with expulsion from the NAPBBP because Hulbert had signed them to his club using what were considered questionable means. Hulbert had a great vested interest in creating his own league. After recruiting St. Louis privately, four western clubs met in Louisville, Kentucky, in January 1876. With Hulbert speaking for the four in New York City on February 2, 1876, the National League was established with eight charter members, as follows:
+         </div>
+         <div class="well">
+        The National League's formation meant the end of the N.A., as its remaining clubs shut down or reverted to amateur or minor status. The only strong club from 1875 excluded in 1876 was a second one in Philadelphia, often called the White Stockings or Phillies.
+The first game in National League history was played on April 22, 1876, at Philadelphia's Jefferson Street Grounds, 25th & Jefferson, between the Philadelphia Athletics and the Boston baseball club. Boston won the game 6–5.
+The new league's authority was tested after the first season. The Athletic and Mutual clubs fell behind in the standings and refused to make western road trips late in the season, preferring to play games against local non-league competition to recoup some of their losses rather than travel extensively. Hulbert reacted to the clubs' defiance by expelling them, an act which not only shocked baseball followers (New York and Philadelphia were the two most populous cities in the league) but made it clear to clubs that league schedule commitments, a cornerstone of competition integrity, were not to be ignored.
+         </div>
+      <div class="well">   
+The NL encountered its first strong rival organization when the American Association began play in 1882. The A.A. played in cities where the NL did not have teams, offered Sunday games and alcoholic beverages in locales where permitted, and sold cheaper tickets everywhere (25 cents versus the NL's standard 50 cents, a hefty sum for many in 1882).
+The National League and the American Association participated in a version of the World Series seven times during their ten-year coexistence. These contests were less organized than the modern Series, lasting as few as three games and as many as fifteen, with two Series (1885 and 1890) ending in disputed ties. The NL won four times and the A.A. only once, in 1886.
+Starting with the Pittsburgh Pirates in 1887, the National League began to raid the American Association for franchises to replace NL teams that folded. This undercut the stability of the A.A.
+</div>
+<div class="well">
+Other new leagues that rose to compete with the National League were the Union Association and the Players' League. The Union Association was established in 1884 and folded after playing only one season, its league champion St. Louis Maroons joining the NL. The Players' League was established in 1890 by the Brotherhood of Professional Base-Ball Players, the sport's first players' union, which had failed to persuade the NL to modify its labor practices, including a salary cap and a reserve clause that bound players to their teams indefinitely. The NL suffered many defections of star players to the Players' League, but the P.L. collapsed after one season. The Brooklyn, Chicago, Pittsburgh, and New York franchises of the NL absorbed their Players' League counterparts.
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+    </div>
+
+  </div>
+
+  </div>
+
+
+
+
+
+<div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/downloaded from www-imagehandler-net using ecp100.png"  class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c4">FA Cup</h4>
+      <p>The WWE Raw Women's Championship is a women's professional wrestling championship created and promoted by the American professional wrestling promotion WWE on the Raw brand. It is one of two women's championships for WWE's main roster, along with the SmackDown Women's Championship on the SmackDown brand. The current champion is Bayley, who is in her first reign.
+Introduced as the WWE Women's Championship on April 3, 2016 at WrestleMania 32, it replaced the Divas Championship and has a unique title history, separate from WWE's original Women's Championship and the Divas Championship. Charlotte Flair, then known simply as Charlotte, was the inaugural champion. As a result of the 2016 draft, the championship became exclusive to Raw with a subsequent rename, and SmackDown created the SmackDown Women's </p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">FA Cup</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="http://theworldgame.sbs.com.au/sites/sbs.com.au.theworldgame/files/styles/full/public/gettyimages-523815832.jpg?itok=nuFKoVmy" style="height:400px;width:100%;">
+        <div class="well">
+         The qualifying competition began with the Extra Preliminary Round on 6 August 2016.[2] All of the competing teams that are not members of either the Premier League or English Football League had to compete in the qualifying rounds to secure a place in the First Round Proper. The final (fourth) qualifying round was played over the weekend of 15 October.[2]
+
+         </div>
+         <div class="well">
+        The First Round draw took place on 17 October and was broadcast live on BBC Two and BT Sport.[4] All 40 First Round Proper ties were played on the weekend of 5 November.[2] 32 teams from the qualifying competition joined the 48 teams from League One and League Two to compete in this round. The round included one team from Level 9 still in the competition, Westfields, who were the lowest-ranked team in this round.
+         </div>
+      <div class="well">   
+The second round draw took place on 7 November at Haig Avenue, home of Southport F.C., immediately prior to the Southport-Fleetwood tie, and was broadcast live on BT Sport. The round included one team from Level 7 still in the competition, Stourbridge, who were the lowest-ranked team in this round.
+</div>
+<div class="well">
+A total of 64 clubs played in the third round; 20 winners of the second round, and 44 teams from Premier League and EFL Championship entering in this round. The draw was held on 5 December 2016 at the BT Tower and was broadcast live on BT Sport and BBC Two.[8] The matches were played across the weekend of 6–9 January 2017.[9][10] The round included one team from Level 7 still in the competition, Stourbridge, who were the lowest-ranked team in this round.
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+    </div>
+    </div>
+
+  </div>
+
+  </div>
+
+
+
+
+
+  <div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/images (1).png"  class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c5">Women Championship</h4>
+      <p>The 2016–17 FA Cup (also known as the FA Challenge Cup) is the 136th and current edition of the oldest recognised football tournament in the world. It is sponsored by Emirates, and known as the Emirates FA Cup for sponsorship purposes. 736 clubs were accepted into the tournament,[1] and it began with the Extra Preliminary Round on 6 August 2016, and will conclude with the final on 27 May 2017.[2] The winner will qualify for the 2017–18 UEFA Europa League group stage.Premier League side Manchester United were the defending champions, but were eliminated in the quarter-finals by Chelsea.
+This edition of the FA Cup was the first in which quarter-final matches were played to a result on the day, instead of being subject to replay in case of a draw. However, all four ties were settled without the need for extra time.</p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">Women Championship</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="https://www.thestar.com/content/dam/thestar/sports/curling/2017/03/26/canadas-rachel-homan-wins-womens-world-curling-gold/curlinggoldteam.jpg.size.custom.crop.1086x724.jpg" style="height:400px;width:100%;">
+        <div class="well">
+         On April 3, 2016, WWE Hall of Famer Lita appeared during the WrestleMania 32 pre-show and, after recapping the history of women's professional wrestling in WWE, unveiled the brand-new championship and declared that WWE's women would no longer be referred to as WWE Divas, but as "WWE Superstars" just as their male counterparts are.[1] This came after the term "Diva" was scrutinized by some commentators, fans, and several past and present WWE female performers, including then-Divas Champion Charlotte, who were in favor of changing the championship to the Women's Championship.[2] It was also changed because some WWE female wrestlers felt it diminished their athletic abilities and relegated them to "eye candy".[3][4] Lita then announced that the winner of the Divas Championship triple threat match between Charlotte, Becky Lynch, and Sasha Banks later that night would become the first-ever WWE Women's Champion, subsequently retiring the Divas Championship.[5] Charlotte, the final Divas Champion, became the inaugural WWE Women's Champion when she defeated Sasha Banks and Becky Lynch.
+         </div>
+         <div class="well">
+         Following the reintroduction of the brand extension, then champion Charlotte was drafted to the Raw brand on the July 19, 2016 premiere episode of SmackDown Live, making the championship exclusive to Raw. In response, SmackDown created the SmackDown Women's Championship on August 23, 2016. The WWE Women's Championship was subsequently renamed to reflect its exclusivity to Raw.[1]
+When the title was introduced, it shared its name with the original Women's Championship. However, the new title does not share the same title history as the original, which was unified with the Divas Championship in 2010, with the combined title inheriting the latter's lineage and history. WWE acknowledges the original championship as its predecessor,[1] and notes that the lineage of female champions dates back to The Fabulous Moolah's reign in 1956.
+</div>
+
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  <div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/Premier_Soccer_League.png"  class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c6">Pimera Division</h4>
+      <p>A total of 60 teams have competed in La Liga since its inception. Nine teams have been crowned champions, with Real Madrid winning the title a record 32 times and Barcelona 24 times. Real Madrid dominated the championship from the 1950s through the 1980s. From the 1990s onwards, Barcelona (14 titles) and Real Madrid (7 titles) both dominated, though La Liga also saw other champions, including Atlético Madrid, Valencia, and Deportivo de La Coruña. In more recent years, Atlético Madrid has joined a coalition of now three teams dominating La Liga alongside Real Madrid and Barcelona.</p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">Primera Division</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="http://c8.alamy.com/comp/EFTJPF/football-primera-division-2412015-elche-vs-fc-barcelona-referree-carlos-EFTJPF.jpg" style="height:400px;width:100%;">
+        <div class="well">
+         On April 3, 2016, WWE Hall of Famer Lita appeared during the WrestleMania 32 pre-show and, after recapping the history of women's professional wrestling in WWE, unveiled the brand-new championship and declared that WWE's women would no longer be referred to as WWE Divas, but as "WWE Superstars" just as their male counterparts are.[1] This came after the term "Diva" was scrutinized by some commentators, fans, and several past and present WWE female performers, including then-Divas Champion Charlotte, who were in favor of changing the championship to the Women's Championship.[2] It was also changed because some WWE female wrestlers felt it diminished their athletic abilities and relegated them to "eye candy".[3][4] Lita then announced that the winner of the Divas Championship triple threat match between Charlotte, Becky Lynch, and Sasha Banks later that night would become the first-ever WWE Women's Champion, subsequently retiring the Divas Championship.[5] Charlotte, the final Divas Champion, became the inaugural WWE Women's Champion when she defeated Sasha Banks and Becky Lynch.
+         </div>
+         <div class="well">
+         Following the reintroduction of the brand extension, then champion Charlotte was drafted to the Raw brand on the July 19, 2016 premiere episode of SmackDown Live, making the championship exclusive to Raw. In response, SmackDown created the SmackDown Women's Championship on August 23, 2016. The WWE Women's Championship was subsequently renamed to reflect its exclusivity to Raw.[1]
+When the title was introduced, it shared its name with the original Women's Championship. However, the new title does not share the same title history as the original, which was unified with the Divas Championship in 2010, with the combined title inheriting the latter's lineage and history. WWE acknowledges the original championship as its predecessor,[1] and notes that the lineage of female champions dates back to The Fabulous Moolah's reign in 1956.
+</div>
+
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  <div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/images.png"  class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c7">Bundesliga</h4>
+      <p>The 2016–17 FA Cup (also known as the FA Challenge Cup) is the 136th and current edition of the oldest recognised football tournament in the world. It is sponsored by Emirates, and known as the Emirates FA Cup for sponsorship purposes. 736 clubs were accepted into the tournament,[1] and it began with the Extra Preliminary Round on 6 August 2016, and will conclude with the final on 27 May 2017.[2] The winner will qualify for the 2017–18 UEFA Europa League group stage.Premier League side Manchester United were the defending champions, but were eliminated in the quarter-finals by Chelsea.
+This edition of the FA Cup was the first in which quarter-final matches were played to a result on the day, instead of being subject to replay in case of a draw. However, all four ties were settled without the need for extra time.</p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">Bundesliga</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="http://www.bettingexpert.com/assets/images/content/sports/football/germany/1-bundesliga/bundesliga15.jpg.pagespeed.ce.3ln72LJ21Z.jpg" style="height:400px;width:100%;">
+        <div class="well">
+         On April 3, 2016, WWE Hall of Famer Lita appeared during the WrestleMania 32 pre-show and, after recapping the history of women's professional wrestling in WWE, unveiled the brand-new championship and declared that WWE's women would no longer be referred to as WWE Divas, but as "WWE Superstars" just as their male counterparts are.[1] This came after the term "Diva" was scrutinized by some commentators, fans, and several past and present WWE female performers, including then-Divas Champion Charlotte, who were in favor of changing the championship to the Women's Championship.[2] It was also changed because some WWE female wrestlers felt it diminished their athletic abilities and relegated them to "eye candy".[3][4] Lita then announced that the winner of the Divas Championship triple threat match between Charlotte, Becky Lynch, and Sasha Banks later that night would become the first-ever WWE Women's Champion, subsequently retiring the Divas Championship.[5] Charlotte, the final Divas Champion, became the inaugural WWE Women's Champion when she defeated Sasha Banks and Becky Lynch.
+         </div>
+         <div class="well">
+         Following the reintroduction of the brand extension, then champion Charlotte was drafted to the Raw brand on the July 19, 2016 premiere episode of SmackDown Live, making the championship exclusive to Raw. In response, SmackDown created the SmackDown Women's Championship on August 23, 2016. The WWE Women's Championship was subsequently renamed to reflect its exclusivity to Raw.[1]
+When the title was introduced, it shared its name with the original Women's Championship. However, the new title does not share the same title history as the original, which was unified with the Divas Championship in 2010, with the combined title inheriting the latter's lineage and history. WWE acknowledges the original championship as its predecessor,[1] and notes that the lineage of female champions dates back to The Fabulous Moolah's reign in 1956.
+</div>
+
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  <div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/download.png"  class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c8">International Championship Cup</h4>
+      <p>The 2016–17 FA Cup (also known as the FA Challenge Cup) is the 136th and current edition of the oldest recognised football tournament in the world. It is sponsored by Emirates, and known as the Emirates FA Cup for sponsorship purposes. 736 clubs were accepted into the tournament,[1] and it began with the Extra Preliminary Round on 6 August 2016, and will conclude with the final on 27 May 2017.[2] The winner will qualify for the 2017–18 UEFA Europa League group stage.Premier League side Manchester United were the defending champions, but were eliminated in the quarter-finals by Chelsea.
+This edition of the FA Cup was the first in which quarter-final matches were played to a result on the day, instead of being subject to replay in case of a draw. However, all four ties were settled without the need for extra time.</p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">International Championship Cup</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="http://cdn.sportslens.com/wp-content/uploads/2015/04/international-champions-cup-2013-championship-20130808-040112-474.jpg" style="height:400px;width:100%;">
+        <div class="well">
+         On April 3, 2016, WWE Hall of Famer Lita appeared during the WrestleMania 32 pre-show and, after recapping the history of women's professional wrestling in WWE, unveiled the brand-new championship and declared that WWE's women would no longer be referred to as WWE Divas, but as "WWE Superstars" just as their male counterparts are.[1] This came after the term "Diva" was scrutinized by some commentators, fans, and several past and present WWE female performers, including then-Divas Champion Charlotte, who were in favor of changing the championship to the Women's Championship.[2] It was also changed because some WWE female wrestlers felt it diminished their athletic abilities and relegated them to "eye candy".[3][4] Lita then announced that the winner of the Divas Championship triple threat match between Charlotte, Becky Lynch, and Sasha Banks later that night would become the first-ever WWE Women's Champion, subsequently retiring the Divas Championship.[5] Charlotte, the final Divas Champion, became the inaugural WWE Women's Champion when she defeated Sasha Banks and Becky Lynch.
+         </div>
+         <div class="well">
+         Following the reintroduction of the brand extension, then champion Charlotte was drafted to the Raw brand on the July 19, 2016 premiere episode of SmackDown Live, making the championship exclusive to Raw. In response, SmackDown created the SmackDown Women's Championship on August 23, 2016. The WWE Women's Championship was subsequently renamed to reflect its exclusivity to Raw.[1]
+When the title was introduced, it shared its name with the original Women's Championship. However, the new title does not share the same title history as the original, which was unified with the Divas Championship in 2010, with the combined title inheriting the latter's lineage and history. WWE acknowledges the original championship as its predecessor,[1] and notes that the lineage of female champions dates back to The Fabulous Moolah's reign in 1956.
+</div>
+
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  <div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/2011_FIFA_Club_World_Cup.svg.png"  class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c9">Fifa Club WorldCup</h4>
+      <p>The 2016–17 FA Cup (also known as the FA Challenge Cup) is the 136th and current edition of the oldest recognised football tournament in the world. It is sponsored by Emirates, and known as the Emirates FA Cup for sponsorship purposes. 736 clubs were accepted into the tournament,[1] and it began with the Extra Preliminary Round on 6 August 2016, and will conclude with the final on 27 May 2017.[2] The winner will qualify for the 2017–18 UEFA Europa League group stage.Premier League side Manchester United were the defending champions, but were eliminated in the quarter-finals by Chelsea.
+This edition of the FA Cup was the first in which quarter-final matches were played to a result on the day, instead of being subject to replay in case of a draw. However, all four ties were settled without the need for extra time.</p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">Fifa Club WolrdCup</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="http://img.fifa.com/mm/photo/tournament/ticketing/02/67/27/67/2672767_full-lnd.jpg" style="height:400px;width:100%;">
+        <div class="well">
+         On April 3, 2016, WWE Hall of Famer Lita appeared during the WrestleMania 32 pre-show and, after recapping the history of women's professional wrestling in WWE, unveiled the brand-new championship and declared that WWE's women would no longer be referred to as WWE Divas, but as "WWE Superstars" just as their male counterparts are.[1] This came after the term "Diva" was scrutinized by some commentators, fans, and several past and present WWE female performers, including then-Divas Champion Charlotte, who were in favor of changing the championship to the Women's Championship.[2] It was also changed because some WWE female wrestlers felt it diminished their athletic abilities and relegated them to "eye candy".[3][4] Lita then announced that the winner of the Divas Championship triple threat match between Charlotte, Becky Lynch, and Sasha Banks later that night would become the first-ever WWE Women's Champion, subsequently retiring the Divas Championship.[5] Charlotte, the final Divas Champion, became the inaugural WWE Women's Champion when she defeated Sasha Banks and Becky Lynch.
+         </div>
+         <div class="well">
+         Following the reintroduction of the brand extension, then champion Charlotte was drafted to the Raw brand on the July 19, 2016 premiere episode of SmackDown Live, making the championship exclusive to Raw. In response, SmackDown created the SmackDown Women's Championship on August 23, 2016. The WWE Women's Championship was subsequently renamed to reflect its exclusivity to Raw.[1]
+When the title was introduced, it shared its name with the original Women's Championship. However, the new title does not share the same title history as the original, which was unified with the Divas Championship in 2010, with the combined title inheriting the latter's lineage and history. WWE acknowledges the original championship as its predecessor,[1] and notes that the lineage of female champions dates back to The Fabulous Moolah's reign in 1956.
+</div>
+
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  <div class="container-fluid">
+<div class="well">
+<div class="media">
+    <div class="media-left media-top">
+      <img src="images/AFC-Asian-Cup-2015-Logo.jpg"  class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading" id="c10">Asian Cup</h4>
+      <p>The 2016–17 FA Cup (also known as the FA Challenge Cup) is the 136th and current edition of the oldest recognised football tournament in the world. It is sponsored by Emirates, and known as the Emirates FA Cup for sponsorship purposes. 736 clubs were accepted into the tournament,[1] and it began with the Extra Preliminary Round on 6 August 2016, and will conclude with the final on 27 May 2017.[2] The winner will qualify for the 2017–18 UEFA Europa League group stage.Premier League side Manchester United were the defending champions, but were eliminated in the quarter-finals by Chelsea.
+This edition of the FA Cup was the first in which quarter-final matches were played to a result on the day, instead of being subject to replay in case of a draw. However, all four ties were settled without the need for extra time.</p>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal9">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal9" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="text-align:center">Asian Cup</h3>
+        </div>
+        <div class="modal-body">
+        
+        <img src="http://cdn.worldcupblog.org/japan.worldcupblog.org/files/2011/01/asian-cup-trophy.jpg" style="height:400px;width:100%;">
+        <div class="well">
+         On April 3, 2016, WWE Hall of Famer Lita appeared during the WrestleMania 32 pre-show and, after recapping the history of women's professional wrestling in WWE, unveiled the brand-new championship and declared that WWE's women would no longer be referred to as WWE Divas, but as "WWE Superstars" just as their male counterparts are.[1] This came after the term "Diva" was scrutinized by some commentators, fans, and several past and present WWE female performers, including then-Divas Champion Charlotte, who were in favor of changing the championship to the Women's Championship.[2] It was also changed because some WWE female wrestlers felt it diminished their athletic abilities and relegated them to "eye candy".[3][4] Lita then announced that the winner of the Divas Championship triple threat match between Charlotte, Becky Lynch, and Sasha Banks later that night would become the first-ever WWE Women's Champion, subsequently retiring the Divas Championship.[5] Charlotte, the final Divas Champion, became the inaugural WWE Women's Champion when she defeated Sasha Banks and Becky Lynch.
+         </div>
+         <div class="well">
+         Following the reintroduction of the brand extension, then champion Charlotte was drafted to the Raw brand on the July 19, 2016 premiere episode of SmackDown Live, making the championship exclusive to Raw. In response, SmackDown created the SmackDown Women's Championship on August 23, 2016. The WWE Women's Championship was subsequently renamed to reflect its exclusivity to Raw.[1]
+When the title was introduced, it shared its name with the original Women's Championship. However, the new title does not share the same title history as the original, which was unified with the Divas Championship in 2010, with the combined title inheriting the latter's lineage and history. WWE acknowledges the original championship as its predecessor,[1] and notes that the lineage of female champions dates back to The Fabulous Moolah's reign in 1956.
+</div>
+
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="jquery.homeycombs.js"></script> 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.honeycombs').honeycombs();
+    });
+</script>
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+
+<footer style="background-color: black;">
+
+  <div class="container">
+    <section>
+      <div class="page-header" id="contact">
+          <h2>Contact Us.<small> Contact us for more.</small></h2>
+        </div><!-- End Page Header -->
+
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Send us a message, or contact us from the address below</p>
+
+
+            <address>
+              <strong>SportsBase.com</strong></br>
+              27, EverShine colony </br>
+              Near Sanjana Park</br>
+              Indore - 452001</br>
+              P: +1 8577015814
+            </address>
+          </div>
+          
+          <div class="col-lg-8">
+            <form action="" class="form-horizontal">
+              <div class="form-group">
+                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-name" placeholder="Enter you name">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="Enter you Email Address">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-url" class="col-lg-2 control-label">Your Website</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="If you have Any.">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Any Message</label>
+                <div class="col-lg-10">
+                  <textarea name="user-message" id="user-message" class="form-control" 
+                  cols="20" rows="10" placeholder="Enter your Message"></textarea>
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+
+             
+
+            </form>
+          </div>
+        </div><!-- End the row -->
+
+    </section>
+  </div>
+
+
+
+  
+    
+        <div class=" text-center">
+        
+
+       
+        <ul class="list-inline">
+          <li><a href="http://www.twitter.com/wiredwiki">Twitter</a></li>
+          <li><a href="http://www.facebook.com/askorama">Facebook</a></li>
+          <li><a href="http://www.youtube.com/wiredwiki">YouTube</a></li>
+        </ul>
+
+        <p>&copy; Copyright @ 2017</p>
+
+      </div>
+      
+
+    </footer>
+
+</body>
+</html>

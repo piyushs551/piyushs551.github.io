@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html ng-app = "myQuiz">
+<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Test Your Knowledge: World of sports</title>
+		<link rel="stylesheet" type="text/css" href="css/quiz.css">
+		<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/angular.min.js"></script>
+			<script type="text/javascript" src="js/quiz.js"></script>
+
+	
+		
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+</head><!-- Latest compiled JavaScript -->
+<body class="background">
+
+<img src="https://static1.squarespace.com/static/5472cb88e4b00abac9723402/t/54740a3de4b03905fd235909/1416890941836/T19_Sky_Sports_Banner.jpg?format=2500w" style="width:100%;">
+
+<div class="minh">
+<nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+        <span class="icon-bar"></span>
+        
+      </button>
+     <a  href="#"><img src="images/logo.jpg" alt="SportsBase" style="height: 68px;"></a> 
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+      <li ><a href="main_Shubham_Patel.html">Home</a></li>
+      <li>
+                    <a href="teams.html" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Soccer</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="manutd.html">Manchester United</a></li>
+                                <li><a href="real.html">Real madrid</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NBA</a>
+                            <ul class="dropdown-menu">
+                                <li><a>Boston Celtics </a></li>
+                                <li><a>New York Knicks</a></li>
+                                </ul>
+                        </li>
+                        
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NFL</a>
+                            <ul class="dropdown-menu">
+                                <li><a>New England Patriots</a></li>
+                                <li><a>Oakland Raiders</a></li>
+                             
+                                
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="Leagues_Shubham.html">Leagues</a></li>
+                
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                                              
+                       <li >
+                            <a href="sportsbasequiz.html" >SportsBase Quiz</a>
+                           
+                        </li>
+                        
+                        <li class="divider"></li>
+                       <li>
+                            <a href="sportsbaseblog.html" > SportsBase Blog</a>
+                            
+                        </li>s
+                        <li class="divider"></li>
+                        <li>
+                            <a href="shop.html" > Shop</a>
+                            
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                <li>
+                
+                <li ><a href="news.html">News</a></li>
+                 <li ><a href="Analysis.html">Analysis</a>
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="cartpage.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</div>
+
+
+	<div id="myQuiz" ng-controller = "QuizController">
+		<h1>Test Your knowledge: <span>World Of Sports</span></h1>
+		<div class="progress">
+			<div class = "{{ ($index === activequestion) ? 'on' : 'off'}}
+							{{(myQuestion.questionState === 'answered') ? 'answered' : 'unanswered'}}
+							{{(myQuestion.correctness === 'correct') ? 'correct' : 'incorrect'}}"
+
+							ng-repeat = "myQuestion in myquestions">	
+			</div>
+		</div>
+		
+
+		<div class="intro {{ (activequestion > -1) ? 'inactive' : 'active'}}">
+			<h2>Welcome</h2>
+			<p>Click Begin to test your knowledge of Worl of Sports</p>
+			<div></div>
+			<div></div>	
+			<p class="btn" ng-click = "activequestion = 0">Begin</p>
+		</div>
+		
+
+		<div class="question
+			{{ ($index === activequestion) ? 'active' : 'inactive' }}
+			{{ (myQuestion.questionState) === 'answered' ? 'answered' : 'unanswered' }}
+		" ng-repeat = "myQuestion in myquestions">
+
+			<p class="txt">{{myQuestion.question}}</p>
+			<p class="ans" 
+			ng-class = "{
+						image:Answer.image,
+						selected:isSelected($parent.$index, $index), 
+						correct:isCorrect($parent.$index, $index) 
+						}"
+			ng-style = "{'background-image' : 'url({{Answer.image}})'}"
+			ng-click = "selectAnswer($parent.$index, $index)"
+			ng-repeat = "Answer in myquestions[$index].answers">{{Answer.text}}</p>
+			
+			<div class="feedback">
+				<p ng-show = "myQuestion.correctness === 'correct'">You are <strong>Correct!</strong></p>
+				<p ng-show = "myQuestion.correctness === 'incorrect'">Oops! Your ans is incorrect!</p>	
+				<p>{{myQuestion.feedback}}</p>
+				<div class="btn" ng-click = "selectContinue()">Continue</div>
+			</div>
+		</div>	
+		
+
+		<div class="results {{ (totalQuestions === activequestion) ? 'active' : 'inactive'  }}">
+			<h3>Results</h3>
+			<p>You scored {{percentage}}% by correctly answering {{score}} of the total {{totalQuestions}} questions.</p>
+			<p>Use the links below to challenge your friends.</p>
+			<div class="share" ng-bind-html = "createShareLinks(percentage)">
+				
+			</div>
+		</div>
+		</div>
+		<br/>
+			<footer style="background-color: black; color: white;">
+  <div class="container">
+    <section>
+      <div class="page-header" id="contact">
+          <h2>Contact Us.<small> Contact us for more.</small></h2>
+        </div><!-- End Page Header -->
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Send us a message, or contact us from the address below</p>
+            <address>
+              <strong>SportsBase.com</strong></br>
+              27, EverShine colony </br>
+              Near Sanjana Park</br>
+              Indore - 452001</br>
+              P: +1 8577015814
+            </address>
+          </div>
+          
+          <div class="col-lg-8">
+            <form action="" class="form-horizontal">
+              <div class="form-group">
+                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-name" placeholder="Enter you name">
+                </div>
+              </div><!-- End form group -->
+              <div class="form-group">
+                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="Enter you Email Address">
+                </div>
+              </div><!-- End form group -->
+              <div class="form-group">
+                <label for="user-url" class="col-lg-2 control-label">Your Website</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="If you have Any.">
+                </div>
+              </div><!-- End form group -->
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Any Message</label>
+                <div class="col-lg-10">
+                  <textarea name="user-message" id="user-message" class="form-control" 
+                  cols="20" rows="10" placeholder="Enter your Message"></textarea>
+                </div>
+              </div><!-- End form group -->
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+             
+            </form>
+          </div>
+        </div><!-- End the row -->
+    </section>
+  </div>
+  
+    
+        <div class=" text-center">
+        
+       
+        <ul class="list-inline">
+          <li><a href="http://www.twitter.com/wiredwiki">Twitter</a></li>
+          <li><a href="http://www.facebook.com/askorama">Facebook</a></li>
+          <li><a href="http://www.youtube.com/wiredwiki">YouTube</a></li>
+        </ul>
+        <p>&copy; Copyright @ 2017</p>
+      </div>
+      
+    </footer>
+
+</body>
+</html>
