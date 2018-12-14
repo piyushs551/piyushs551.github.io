@@ -1,0 +1,120 @@
+<html>
+<head>
+<style>
+.panel-custom2{
+
+	width:100%;
+	text-align:left;
+	border-radius:5px;
+	box-shadow: 0px 0px 5px #dcd9d9;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.default-just{
+	
+	font-family: "Times New Roman", Times, serif;
+	margin-left:55%;
+	margin-right:5%;
+}
+
+.default-img{
+
+	float: left;
+}
+#ddg{
+
+	font-size: 80px;
+}
+h3{
+
+	font-size: 32px;
+	margin-top: -17px;
+}
+h5{
+	margin-top: -8px;
+	font-size: 20px;
+}
+h6{
+	font-size: 16px;
+}
+h1{
+	font-size: 32px;
+}
+.col-md-7{
+
+	margin-left:40px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="row">
+<div class="col-md-7">
+<div ng-model="player">
+  
+<div class="panel-default panel-custom2">
+
+<div class="panel-body">
+
+<img src="images/{{player[whichItem].imgName}}.jpg" class="default-img"/>
+
+<div class="default-just">
+
+					<p id="ddg">{{player[whichItem].shirtnumber}}</p>
+					<h3>{{player[whichItem].name}}</h3>
+					<h5>{{player[whichItem].role}}</h5>
+                    <h6>Nationality:{{player[whichItem].nationality}}</h6>
+					<h6>DOB:{{player[whichItem].dob}}</h6>
+					<h6>Height:{{player[whichItem].height}}</h6>
+					<h6>Weight:{{player[whichItem].weight}}</h6>
+
+</div>
+
+</div></div>
+		        
+        </div>
+		</div>
+		
+		<div class="col-md-4">
+		 
+<div class="panel-default panel-custom2">
+
+<div class="panel-body">
+		
+		<h1>Last Game:</h1>
+		<h6 style="text-align:center">Real Madrid &nbsp;&nbsp;&nbsp; 4 - 2 &nbsp;&nbsp;&nbsp; Bayern Munich</h6> 
+		<p style="text-align:center">UEFA Champions League</p>
+		<hr>
+		
+		<h6>Minutes:{{player[whichItem].mins}}</h6>
+		<h6>Fouls:{{player[whichItem].foul}}</h6>
+		<h6>Yellow Card:{{player[whichItem].yellow}}</h6>
+		<h6>Red Card:{{player[whichItem].red}}</h6>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="row">
+		<div class="col-md-7">
+		
+		<div class="panel-default panel-custom2">
+
+		<div class="panel-body">
+					<h1>Player Bio</h1>
+					<p>{{player[whichItem].bio}}</p>
+					<p>{{player[whichItem].bio1}}</p>
+					<p>{{player[whichItem].bio2}}</p>
+					<p>{{player[whichItem].bio3}}</p>
+
+		</div>
+		</div>
+		</div>
+		
+		
+		</div>
+</body>
+</html>
+  
